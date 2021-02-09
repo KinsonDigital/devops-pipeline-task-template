@@ -1,0 +1,11 @@
+node_modules
+Results/
+publish/
+vsix-packages/
+bin/
+newman/
+
+yarn-error.log
+buildAndReleaseTask/*.map
+buildAndReleaseTask/*.js
+.env.temp

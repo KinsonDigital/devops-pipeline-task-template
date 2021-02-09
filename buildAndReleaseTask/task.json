@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "d12647bf-2b95-4740-93a2-e3a2851e7bde",
+    "name": "NextGenPostmanRunner",
+    "friendlyName": "NextGen Postman Runner",
+    "description": "Executes postman fork tests that are tied to Azure DevOps id's and automates postman fork merging.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "calvin.wilkinson",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 1
+    },
+    "instanceNameFormat": "NextGen Postman Runner",
+    "inputs": [
+        {
+            "name": "SampleInput",
+            "type": "string",
+            "label": "Sample Task Input",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "This is an input example.  Add more inputs to task.json .env files."
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "./bin/index.js"
+        }
+    }
+}

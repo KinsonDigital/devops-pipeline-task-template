@@ -1,0 +1,33 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bin": true,
+        "**/.taskkey": true,
+        "**/yarn.lock": true,
+        "**/*.log": true,
+        "**/.env.temp": true,
+        "**/*.js": true,
+        "**/*.map": true,
+    },
+    "cSpell.words": [
+        "SampleInput",
+        "mediumseagreen",
+        "meijer",
+        "nextgen",
+        "pmak",
+        "postbuild",
+        "postclean",
+        "postpackage",
+        "postprod",
+        "postprune",
+        "preprod",
+        "prerebuild",
+        "preupdate",
+        "vsix"
+    ]
+}

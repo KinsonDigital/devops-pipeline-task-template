@@ -1,0 +1,53 @@
+{
+    "env": {
+        "node": true
+    },
+    "ignorePatterns": [
+        "**/node_modules",
+        "**/bin"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "overrides": [
+        {
+            "files": "./src/*.ts",
+            "excludedFiles": "*.js"
+        }
+    ],
+    "rules": {
+        // Override our default settings just for this directory
+        "strict": "off",
+        "quotes": ["error", "double"],
+        "prefer-const": "error",
+        "block-scoped-var": "error",
+        "curly": [ "error" ],
+        "object-curly-newline": [
+            "error",
+            { "ObjectExpression": "always"},
+            { "ImportDeclaration": "never" }
+        ],
+        "array-bracket-spacing": ["error", "never"],
+        "object-curly-spacing": [ "error", "always"],
+        "one-var": [ "error", "never"],
+        "@typescript-eslint/typedef": [ "error", {
+            "memberVariableDeclaration": true,
+            "arrowParameter": true,
+            "parameter": true,
+            "propertyDeclaration": true,
+            "variableDeclaration": true,
+            "arrayDestructuring": true
+        }],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "*", "next": "return" }
+        ]
+    }
+}
+
+/*
+  arrayDestructuring?: boolean;
+  objectDestructuring?: boolean;
+  variableDeclarationIgnoreFunction?: boolean;
+*/
